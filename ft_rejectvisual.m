@@ -334,6 +334,8 @@ if ~all(chansel)
       tmpcfg.trials = 'all';
       tmpcfg.badchannel = data.label(~chansel);
       tmpcfg.neighbours = cfg.neighbours;
+      tmpcfg.checksize = Inf;
+      
       if isfield(cfg, 'grad')
           tmpcfg.grad = cfg.grad;
       end
